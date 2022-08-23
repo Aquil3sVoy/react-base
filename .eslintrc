@@ -8,7 +8,6 @@
       "version": "detect"
     }
   },
-
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "extends": [
@@ -20,6 +19,7 @@
   "rules": {
     "@typescript-eslint/ban-ts-comment": "warn",
     "comma-dangle": "off",
+    "no-unused-vars": "error",
     "multiline-ternary": "off",
     "no-use-before-define": "off",
     "space-before-function-paren": "off",
