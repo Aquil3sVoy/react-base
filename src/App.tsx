@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import routes from './view/routes'
 
-function App(): JSX.Element {
+function App() {
   return (
     <Suspense fallback={<p> Loading...</p>}>
       <Routes>

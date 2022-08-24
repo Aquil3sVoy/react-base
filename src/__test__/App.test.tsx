@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { BrowserRouter, MemoryRouter } from 'react-router-dom'
 import { act } from 'react-dom/test-utils'
 import userEvent from '@testing-library/user-event'
+// import { renderWithProviders } from '../utils/test-utils'
 
 describe('App', () => {
   it('Render app', async () => {

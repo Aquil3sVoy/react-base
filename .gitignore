@@ -27,3 +27,4 @@ dist-ssr
 
 # Test coverage 
 src/coverage/*
+.src/coverage/**/* 
