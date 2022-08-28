@@ -1,18 +1,35 @@
 {
   "name": "base-react",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Starter template for Vite and React (typescript), support tailwindcss, jest eslint, prettier, husky and many more configured and ready to use",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aquil3sVoy/react-base"
+  },
+  "author": "Oscar Corona <oabc4004@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aquil3sVoy/react-base/issues"
+  },
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "jest",
+    "eslint",
+    "prettier",
+    "husky"
+  ],
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "test": "jest",
     "test:cov": "jest --coverage",
     "build": "tsc && vite build",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx, src",
     "preview": "vite preview",
     "prepare": "husky install"
   },
-  "author": "Oscar Corona <oabc4004@gmail.com>",
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^2.0.4",
     "@reduxjs/toolkit": "^1.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,6 +42,10 @@
     "not IE 11"
   ],
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
     "@testing-library/dom": "^8.17.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -34,7 +55,6 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
-    "@vitejs/plugin-react": "^2.0.1",
     "autoprefixer": "^10.4.8",
     "eslint": "^8.18.0",
     "eslint-plugin-import": "^2.26.0",
@@ -49,6 +69,7 @@
     "tailwindcss": "^3.1.8",
     "ts-jest": "^28.0.8",
     "typescript": "^4.7.4",
-    "vite": "^3.0.7"
+    "vite": "^2.9.13",
+    "vite-preset-react": "^2.3.0"
   }
 }

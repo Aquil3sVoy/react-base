@@ -1,12 +1,14 @@
 import { Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { utils } from './utils/utils'
 import routes from './view/routes'
 
 function App() {
+  const routesAsFlat = utils.uniqueRoute(routes?.routes as never)
   return (
     <Suspense fallback={<p> Loading...</p>}>
       <Routes>
-        {routes.simpleRoutes.map((route) => (
+        {routesAsFlat.map((route) => (
           <Route key={route.path} path={route.path} element={<route.element />}>
             {route.childrens.map((children) => (
               <Route
