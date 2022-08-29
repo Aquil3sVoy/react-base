@@ -5,6 +5,7 @@ import routes from './view/routes'
 
 function App() {
   const routesAsFlat = utils.uniqueRoute(routes?.routes as never)
+
   return (
     <Suspense fallback={<p> Loading...</p>}>
       <Routes>

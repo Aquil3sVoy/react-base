@@ -3,20 +3,29 @@ import { utils } from '../../../utils/utils'
 import { XMarkIcon, Bars3Icon, CubeIcon } from '@heroicons/react/24/outline'
 import { RouteProps } from '../../../utils/types'
 import { Link } from 'react-router-dom'
+import Toogle from '../../elements/Toogle'
 
 export default function Navbar({
   children,
   url,
   navigation,
+  switchProps,
 }: {
   children: React.ReactNode
   url: string[]
   navigation: RouteProps[]
+  switchProps: {
+    onClick: () => void
+    isDarkMode: boolean
+  }
 }) {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-white border-b border-gray-200">
+        <Disclosure
+          as="nav"
+          className="bg-white dark:bg-slate-800 border-b border-gray-200"
+        >
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,8 +56,15 @@ export default function Navbar({
                       ))}
                     </div>
                   </div>
+
                   <div className="hidden sm:ml-6 sm:flex sm:items-center">
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                      <div className="mr-6 inline-flex">
+                        <Toogle
+                          enabled={switchProps.isDarkMode}
+                          setEnabled={switchProps.onClick}
+                        />
+                      </div>
                       <a
                         href="#"
                         className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"

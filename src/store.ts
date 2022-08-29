@@ -3,10 +3,10 @@ import {
   configureStore,
   PreloadedState
 } from '@reduxjs/toolkit'
-import todoReducer from './features/todo/todoSlice'
+import layoutReducer from './features/layout/layoutSlice'
 
 const rootReducer = combineReducers({
-  todo: todoReducer
+  layout: layoutReducer
 })
 export function setupStore(preloadedState?: PreloadedState<RootState>) {
   return configureStore({
