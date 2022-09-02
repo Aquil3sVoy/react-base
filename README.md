@@ -54,6 +54,17 @@ _Follow these steps to run locally._
    ```
 4. Open the browser and go to http://localhost:3000
 
+### Test
+
+1. Tes:
+   ```sh
+   npm run test
+   ```
+2. Build:
+   ```sh
+   npm run test:coverage
+   ```
+
 ## Features
 
 - [React 17](https://es.reactjs.org/versions) with [React-Router 6](https://reactrouter.com/en/main/getting-started/overview)
