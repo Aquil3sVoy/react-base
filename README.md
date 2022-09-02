@@ -1,18 +1,9 @@
-# React-Template
-
-This template is based on the pure commands of each installed library.
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+  <ol> 
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -24,6 +15,11 @@ This template is based on the pure commands of each installed library.
     <li><a href="#contact">Contact</a></li> 
   </ol>
 </details>
+
+# React-Template
+
+This template is based on the pure commands of each installed library.
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- GETTING STARTED -->
 
