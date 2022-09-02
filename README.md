@@ -19,7 +19,6 @@
 # React-Template
 
 This template is based on the pure commands of each installed library.
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- GETTING STARTED -->
 
