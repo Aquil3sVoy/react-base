@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
+
 type RouteProps = {
     name: string
     path: string
     index: boolean
     element: () => JSX.Element
     childrens: ChildrensProps[]
+    icon: (props) => JSX.Element | null
 }
 
 type ChildrensProps = {

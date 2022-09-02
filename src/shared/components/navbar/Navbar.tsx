@@ -31,10 +31,10 @@ export default function Navbar({
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                   <div className="flex">
-                    <div className="flex-shrink-0 flex items-center">
-                      <CubeIcon className="block lg:hidden h-8 w-auto" />
-                      <CubeIcon className="hidden lg:block h-8 w-auto" />
-                    </div>
+                    <Link to="/" className="flex-shrink-0 flex items-center">
+                      <CubeIcon className="block lg:hidden h-8 w-auto dark:text-gray-100" />
+                      <CubeIcon className="hidden lg:block h-8 w-auto dark:text-gray-100" />
+                    </Link>
 
                     <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                       {navigation.map((item) => (
@@ -43,8 +43,8 @@ export default function Navbar({
                           to={item.path}
                           className={utils.classNames(
                             url.includes(item.path)
-                              ? 'border-indigo-500 text-gray-900'
-                              : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+                              ? 'border-indigo-500 text-gray-900 dark:text-gray-100'
+                              : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-500 dark:hover:border-gray-200 dark:hover:text-gray-400',
                             'inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'
                           )}
                           aria-current={
@@ -67,13 +67,13 @@ export default function Navbar({
                       </div>
                       <a
                         href="#"
-                        className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                        className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-100 dark:hover:text-gray-500"
                       >
                         Sign in
                       </a>
                       <a
                         href="#"
-                        className="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-indigo-600 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700"
+                        className="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-indigo-600 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700 dark:bg-indigo-800 dark:text-gray-100 dark:hover:bg-indigo-900 dark:hover:text-gray-100"
                       >
                         Sign up
                       </a>
