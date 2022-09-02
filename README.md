@@ -52,7 +52,7 @@ _Follow these steps to run locally._
    ```sh
    npm run start
    ```
-4. Open the browser and go to http://localhost:3000
+4. Open the browser and go to http://localhost:5173/
 
 ### Test
 
@@ -72,6 +72,7 @@ _Follow these steps to run locally._
 - [Jest](https://jestjs.io/) and [Testing-Library] (https://testing-library.com/)
 - [Tailwind](https://tailwindcss.com/)
 - [Redux](https://redux.js.org/) and [React-Redux](https://react-redux.js.org/introduction/getting-started)
+- [Vite v3](https://vitejs.dev/blog/announcing-vite3.html)
 
 ### Coding Style
 
