@@ -64,6 +64,7 @@ _Follow these steps to run locally._
    ```sh
    npm run test:coverage
    ```
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
 
@@ -84,6 +85,8 @@ _Follow these steps to run locally._
 - [TypeScript](https://www.typescriptlang.org/)
 - [Commit lint](https://github.com/conventional-changelog/commitlint) - Help to detect common mistakes in commits. (Recommended)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Checklist
 
 Use the following checklist to help you get started:
@@ -95,8 +98,13 @@ Use the following checklist to help you get started:
 - [ ] Modify the manifest in `public`
 - [ ] Clean up the README's content
 
-### Issues
+## Contact
 
-#### REACT-PLUGIN
+Ocar Corona - [@oscarabcorona](https://www.instagram.com/oscarabcorona/) - oabc4004@gmail.com
 
-"vite": "^3.0.7"+ "@vitejs/plugin-react": "^2.0.1", can't resolve ... because of the version conflict. Just waiting until vite update plugin-react to +2.3.
+Project Link: [https://github.com/Aquil3sVoy/test-authentise.git](https://github.com/Aquil3sVoy/test-authentise.git)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ 
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/oscarabcorona/
