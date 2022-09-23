@@ -1,7 +1,7 @@
 {
   "name": "base-react",
   "version": "0.0.1",
-  "description": "Starter template for Vite and React (typescript), support tailwindcss, jest eslint, prettier, husky and many more configured and ready to use",
+  "description": "Starter template for Vite and React (typescript), support tailwindcss, jest, cypress, eslint, prettier, husky and many more configured and ready to use",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aquil3sVoy/react-base"
@@ -15,6 +15,7 @@
     "react",
     "tailwindcss",
     "jest",
+    "cypress",
     "eslint",
     "prettier",
     "vite",
@@ -25,7 +26,10 @@
     "start": "vite",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
+    "prettierrc": "prettier --write src",
     "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "cypress:open": "cypress open",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install"
@@ -58,7 +62,9 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
+    "@vitejs/plugin-react": "^2.0.1",
     "autoprefixer": "^10.4.8",
+    "cypress": "^10.8.0",
     "eslint": "^8.18.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.30.1",
@@ -69,10 +75,11 @@
     "jest-environment-jsdom": "^28.1.3",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8",
     "ts-jest": "^28.0.8",
     "typescript": "^4.7.4",
-    "vite": "^3.0.7",
-    "@vitejs/plugin-react": "^2.0.1"
+    "vite": "^3.0.7"
   }
 }

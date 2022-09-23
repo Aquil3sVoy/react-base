@@ -34,6 +34,7 @@
     "react-hooks/exhaustive-deps": "error",
     "react/button-has-type": "error",
     "react/require-default-props": "error",
+    "react/no-unknown-property": "off",
     "react/no-children-prop": "error"
   }
 }

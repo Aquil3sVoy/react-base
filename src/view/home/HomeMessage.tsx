@@ -1,3 +1,3 @@
 export default function HomeMessage() {
-  return <>From Home</>
+  return <>From Home</>;
 }

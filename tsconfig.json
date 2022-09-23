@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "outDir": "dist",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": false,
@@ -22,5 +23,5 @@
       "hooks/*": ["src/hooks/*"]
     }
   },
-  "include": ["./src"]
+  "include": ["./src", "cypress.d.ts"]
 }

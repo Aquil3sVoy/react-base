@@ -1,25 +1,26 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { RootState } from '../../store'
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '../../store';
 
 export type Layout = {
-    darkMode: boolean,
-}
+  darkMode: boolean;
+};
 
 const initialState: Layout = {
-    darkMode: false,
-}
+  darkMode: false,
+};
 
 const todosSlice = createSlice({
-    name: 'layout',
-    initialState,
-    reducers: {
-        darkModeChanged: (state) => {
-            state.darkMode = !state.darkMode
-        }
-    }
-})
+  name: 'layout',
+  initialState,
+  reducers: {
+    darkModeChanged: (state) => {
+      state.darkMode = !state.darkMode;
+    },
+  },
+});
 
-export const { darkModeChanged } = todosSlice.actions
-export const selectDarkMode = (state: RootState) => state.layout.darkMode
+export const { darkModeChanged } = todosSlice.actions;
+export const selectDarkMode = (state: RootState) =>
+  state.layout.darkMode;
 
-export default todosSlice.reducer
+export default todosSlice.reducer;

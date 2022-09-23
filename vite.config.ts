@@ -6,6 +6,9 @@ export default defineConfig((configEnv) => {
   const isDevelopment = configEnv.mode === "development"
 
   return {
+    server: {
+      port: 3000,
+    },
     plugins: [react()],
     resolve: {
       alias: {

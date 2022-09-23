@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -6,5 +6,5 @@ export default function About() {
       <h2>Who are we?</h2>
       <Outlet />
     </>
-  )
+  );
 }

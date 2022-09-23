@@ -1,6 +1,6 @@
-import { lazy } from 'react'
+import { lazy } from 'react';
 
-const Home = lazy(() => import('./HomePage'))
-const HomeMessage = lazy(() => import('./HomeMessage'))
+const Home = lazy(() => import('./HomePage'));
+const HomeMessage = lazy(() => import('./HomeMessage'));
 
-export { Home, HomeMessage }
+export { Home, HomeMessage };

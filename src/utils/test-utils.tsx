@@ -1,15 +1,16 @@
-import React, { PropsWithChildren } from 'react'
-import { render } from '@testing-library/react'
-import type { RenderOptions } from '@testing-library/react'
-import type { PreloadedState } from '@reduxjs/toolkit'
+import React, { PropsWithChildren } from 'react';
+import { render } from '@testing-library/react';
+import type { RenderOptions } from '@testing-library/react';
+import type { PreloadedState } from '@reduxjs/toolkit';
 
-import { setupStore } from '../store'
-import type { AppStore, RootState } from '../store'
-import { Provider } from 'react-redux'
+import { setupStore } from '../store';
+import type { AppStore, RootState } from '../store';
+import { Provider } from 'react-redux';
 
-interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
-  preloadedState?: PreloadedState<RootState>
-  store?: AppStore
+interface ExtendedRenderOptions
+  extends Omit<RenderOptions, 'queries'> {
+  preloadedState?: PreloadedState<RootState>;
+  store?: AppStore;
 }
 
 export function renderWithProviders(
@@ -23,9 +24,12 @@ export function renderWithProviders(
   function Wrapper({
     children,
   }: PropsWithChildren<{
-    children: React.ReactElement
+    children: React.ReactElement;
   }>): JSX.Element {
-    return <Provider store={store}>{children}</Provider>
+    return <Provider store={store}>{children}</Provider>;
   }
-  return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) }
+  return {
+    store,
+    ...render(ui, { wrapper: Wrapper, ...renderOptions }),
+  };
 }

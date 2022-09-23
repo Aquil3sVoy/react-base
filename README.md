@@ -65,7 +65,7 @@ _Follow these steps to run locally._
 
 - [React 17](https://es.reactjs.org/versions) with [React-Router 6](https://reactrouter.com/en/main/getting-started/overview)
 - TypeScript
-- [Jest](https://jestjs.io/) and [Testing-Library] (https://testing-library.com/)
+- [Jest](https://jestjs.io/), [Testing-Library] (https://testing-library.com/), [Cypress](https://www.cypress.io/).
 - [Tailwind](https://tailwindcss.com/)
 - [Redux](https://redux.js.org/) and [React-Redux](https://react-redux.js.org/introduction/getting-started)
 - [Vite v3](https://vitejs.dev/blog/announcing-vite3.html)
@@ -73,7 +73,7 @@ _Follow these steps to run locally._
 ### Coding Style
 
 - [ESLint](https://eslint.org/) - configured for React/Hooks & TypeScript, some commond errors.
-- [Prettier](https://prettier.io/) - configured for
+- [Prettier](https://prettier.io/), and[prettier-plugin-tailwindcss] for staling.
 
 ### Dev tools
 
